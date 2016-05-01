@@ -16,6 +16,9 @@ ifneq ($(TARGET_PROVIDES_LIBRIL),true)
 display-hals += libril
 endif
 
+ifneq ($(TARGET_PROVIDES_LIBCAMERA),true)
+display-hals += libcamera
+endif
 
 include $(call all-named-subdir-makefiles,$(display-hals))
 
