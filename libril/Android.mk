@@ -22,7 +22,7 @@ LOCAL_MODULE_PATH             := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes)
 LOCAL_SHARED_LIBRARIES        += libGLESv1_CM
-LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"gralloc\"
+LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"ril\"
 LOCAL_SRC_FILES               :=  libril.c \
 include $(BUILD_SHARED_LIBRARY)
 
