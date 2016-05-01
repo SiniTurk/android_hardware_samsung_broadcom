@@ -12,6 +12,11 @@ ifneq ($(TARGET_PROVIDES_LIBLIGHTS),true)
 display-hals += liblight
 endif
 
+ifneq ($(TARGET_PROVIDES_LIBRIL),true)
+display-hals += libril
+endif
+
+
 include $(call all-named-subdir-makefiles,$(display-hals))
 
 endif
