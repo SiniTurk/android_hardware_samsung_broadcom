@@ -3,6 +3,7 @@
 
 ifeq ($(TARGET_BROADCOM_DISPLAY_VARIANT),true)
 display-hals += libhwcomposer
+display-hals += libgralloc
 #display-hals := libgralloc libgenlock libcopybit
 #display-hals += libhwcomposer liboverlay libqdutils
 #display-hals += libtilerenderer
