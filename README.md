@@ -13,3 +13,4 @@ Sources of hawaii soc libs are based on :-
 
 [libril](https://github.com/SandPox/android_vendor_samsung_kyleproxx/blob/master/proprietary/lib/libril_KYLEPRO.so) (Usage = `TARGET_HAWAII_LIBRIL := true`)
 
+[nfc_nci.hawaii](https://github.com/SiniTurk/android_vendor_samsung_cs02/blob/master/proprietary/lib/hw/nfc_nci.hawaii.so)(Usage = `TARGET_HAWAII_NFC : = true`)

@@ -18,6 +18,12 @@ camera-hals += libcamera
 include $(call all-named-subdir-makefiles,$(camera-hals))
 endif
 
+ifneq ($(TARGET_HAWAII_NFC),true)
+nfc-hals += nfc
+include $(call all-named-subdir-makefiles,$(nfc-hals))
+endif
+
+
 #display-hals := libgralloc libgenlock libcopybit
 #display-hals += libhwcomposer liboverlay libqdutils
 #display-hals += libtilerenderer
