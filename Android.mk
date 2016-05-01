@@ -12,14 +12,17 @@ ifneq ($(TARGET_PROVIDES_LIBLIGHTS),true)
 display-hals += liblight
 endif
 
+include $(call all-named-subdir-makefiles,$(display-hals))
+endif
+
 ifneq ($(TARGET_PROVIDES_LIBRIL),true)
-display-hals += libril
+ril-hals += libril
+include $(call all-named-subdir-makefiles,$(ril-hals))
 endif
 
 ifneq ($(TARGET_PROVIDES_LIBCAMERA),true)
-display-hals += libcamera
+camera-hals += libcamera
+include $(call all-named-subdir-makefiles,$(camera-hals))
 endif
 
-include $(call all-named-subdir-makefiles,$(display-hals))
 
-endif
