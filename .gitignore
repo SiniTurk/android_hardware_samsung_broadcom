@@ -30,3 +30,9 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# Backup files made by gedit 
+
+*.*~
+*~
+.*~
